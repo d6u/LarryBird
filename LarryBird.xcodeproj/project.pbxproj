@@ -12,6 +12,20 @@
 		78F4F8A91B7050C000E04919 /* LarryBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4F89D1B7050C000E04919 /* LarryBird.framework */; };
 		78F4F8B01B7050C000E04919 /* LarryBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8AF1B7050C000E04919 /* LarryBirdTests.swift */; };
 		78F4F8BA1B7052CA00E04919 /* request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8B91B7052CA00E04919 /* request.swift */; };
+		78F4F8BC1B70534500E04919 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8BB1B70534500E04919 /* Endpoint.swift */; };
+		78F4F8BE1B70534B00E04919 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8BD1B70534B00E04919 /* Param.swift */; };
+		78F4F8C01B70535200E04919 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8BF1B70535200E04919 /* Config.swift */; };
+		78F4F8C21B70551800E04919 /* urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8C11B70551800E04919 /* urlEncode.swift */; };
+		78F4F8C41B70555600E04919 /* merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8C31B70555600E04919 /* merge.swift */; };
+		78F4F8C61B70557D00E04919 /* generateOauthSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8C51B70557D00E04919 /* generateOauthSignature.swift */; };
+		78F4F8C81B70559600E04919 /* sha1DigestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8C71B70559600E04919 /* sha1DigestString.swift */; };
+		78F4F8CB1B70581000E04919 /* UrlEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8CA1B70581000E04919 /* UrlEncoder.swift */; };
+		78F4F8CD1B7058FA00E04919 /* buildRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8CC1B7058FA00E04919 /* buildRequest.swift */; };
+		78F4F8D51B705DC500E04919 /* processResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8D41B705DC500E04919 /* processResponse.swift */; };
+		78F4F8D71B705E3E00E04919 /* parseQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8D61B705E3E00E04919 /* parseQueryParams.swift */; };
+		78F4F8D91B705EC100E04919 /* paramsToDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8D81B705EC100E04919 /* paramsToDict.swift */; };
+		78F4F8DB1B705ED300E04919 /* authString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8DA1B705ED300E04919 /* authString.swift */; };
+		78F4F8DD1B705EE800E04919 /* unsignedOauthDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8DC1B705EE800E04919 /* unsignedOauthDict.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +47,20 @@
 		78F4F8AE1B7050C000E04919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F4F8AF1B7050C000E04919 /* LarryBirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LarryBirdTests.swift; sourceTree = "<group>"; };
 		78F4F8B91B7052CA00E04919 /* request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = request.swift; sourceTree = "<group>"; };
+		78F4F8BB1B70534500E04919 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		78F4F8BD1B70534B00E04919 /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
+		78F4F8BF1B70535200E04919 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		78F4F8C11B70551800E04919 /* urlEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlEncode.swift; sourceTree = "<group>"; };
+		78F4F8C31B70555600E04919 /* merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = merge.swift; sourceTree = "<group>"; };
+		78F4F8C51B70557D00E04919 /* generateOauthSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generateOauthSignature.swift; sourceTree = "<group>"; };
+		78F4F8C71B70559600E04919 /* sha1DigestString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sha1DigestString.swift; sourceTree = "<group>"; };
+		78F4F8CA1B70581000E04919 /* UrlEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlEncoder.swift; sourceTree = "<group>"; };
+		78F4F8CC1B7058FA00E04919 /* buildRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buildRequest.swift; sourceTree = "<group>"; };
+		78F4F8D41B705DC500E04919 /* processResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = processResponse.swift; sourceTree = "<group>"; };
+		78F4F8D61B705E3E00E04919 /* parseQueryParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseQueryParams.swift; sourceTree = "<group>"; };
+		78F4F8D81B705EC100E04919 /* paramsToDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paramsToDict.swift; sourceTree = "<group>"; };
+		78F4F8DA1B705ED300E04919 /* authString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = authString.swift; sourceTree = "<group>"; };
+		78F4F8DC1B705EE800E04919 /* unsignedOauthDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unsignedOauthDict.swift; sourceTree = "<group>"; };
 		89D5FAC5282C07F0D1CDC2E2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29050DC3D9BBC902F53AE1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,8 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				78F4F8B91B7052CA00E04919 /* request.swift */,
-				78F4F8A21B7050C000E04919 /* LarryBird.h */,
-				78F4F8A11B7050C000E04919 /* Info.plist */,
+				78F4F8BF1B70535200E04919 /* Config.swift */,
+				78F4F8BB1B70534500E04919 /* Endpoint.swift */,
+				78F4F8BD1B70534B00E04919 /* Param.swift */,
+				78F4F8CE1B70594500E04919 /* Modules */,
+				78F4F8CF1B70595300E04919 /* Resources */,
 			);
 			path = LarryBird;
 			sourceTree = "<group>";
@@ -110,6 +141,33 @@
 				78F4F8AE1B7050C000E04919 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78F4F8CE1B70594500E04919 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				78F4F8CC1B7058FA00E04919 /* buildRequest.swift */,
+				78F4F8DC1B705EE800E04919 /* unsignedOauthDict.swift */,
+				78F4F8DA1B705ED300E04919 /* authString.swift */,
+				78F4F8D81B705EC100E04919 /* paramsToDict.swift */,
+				78F4F8CA1B70581000E04919 /* UrlEncoder.swift */,
+				78F4F8C51B70557D00E04919 /* generateOauthSignature.swift */,
+				78F4F8C71B70559600E04919 /* sha1DigestString.swift */,
+				78F4F8C31B70555600E04919 /* merge.swift */,
+				78F4F8C11B70551800E04919 /* urlEncode.swift */,
+				78F4F8D41B705DC500E04919 /* processResponse.swift */,
+				78F4F8D61B705E3E00E04919 /* parseQueryParams.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		78F4F8CF1B70595300E04919 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78F4F8A21B7050C000E04919 /* LarryBird.h */,
+				78F4F8A11B7050C000E04919 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		9FF389C62042A5602F3CEBE5 /* Pods */ = {
@@ -263,6 +321,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F4F8C41B70555600E04919 /* merge.swift in Sources */,
+				78F4F8CB1B70581000E04919 /* UrlEncoder.swift in Sources */,
+				78F4F8BE1B70534B00E04919 /* Param.swift in Sources */,
+				78F4F8C21B70551800E04919 /* urlEncode.swift in Sources */,
+				78F4F8C01B70535200E04919 /* Config.swift in Sources */,
+				78F4F8CD1B7058FA00E04919 /* buildRequest.swift in Sources */,
+				78F4F8DB1B705ED300E04919 /* authString.swift in Sources */,
+				78F4F8D71B705E3E00E04919 /* parseQueryParams.swift in Sources */,
+				78F4F8BC1B70534500E04919 /* Endpoint.swift in Sources */,
+				78F4F8D91B705EC100E04919 /* paramsToDict.swift in Sources */,
+				78F4F8DD1B705EE800E04919 /* unsignedOauthDict.swift in Sources */,
+				78F4F8D51B705DC500E04919 /* processResponse.swift in Sources */,
+				78F4F8C81B70559600E04919 /* sha1DigestString.swift in Sources */,
+				78F4F8C61B70557D00E04919 /* generateOauthSignature.swift in Sources */,
 				78F4F8BA1B7052CA00E04919 /* request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53D02C6BE117FF12554B2771 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -389,6 +462,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -397,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A29050DC3D9BBC902F53AE1E /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -407,6 +483,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
