@@ -14,4 +14,5 @@ Pod::Spec.new do |spec|
   spec.osx.deployment_target = '10.9'
 
   spec.dependency 'Alamofire', '~> 1.3.0'
+  spec.dependency 'CryptoSwift', '~> 0.0.12'
 end

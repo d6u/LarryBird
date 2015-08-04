@@ -26,6 +26,7 @@
 		78F4F8D91B705EC100E04919 /* paramsToDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8D81B705EC100E04919 /* paramsToDict.swift */; };
 		78F4F8DB1B705ED300E04919 /* authString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8DA1B705ED300E04919 /* authString.swift */; };
 		78F4F8DD1B705EE800E04919 /* unsignedOauthDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8DC1B705EE800E04919 /* unsignedOauthDict.swift */; };
+		78F4F8E51B706F8700E04919 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4F8E41B706F8700E04919 /* NSData+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		78F4F8D81B705EC100E04919 /* paramsToDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paramsToDict.swift; sourceTree = "<group>"; };
 		78F4F8DA1B705ED300E04919 /* authString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = authString.swift; sourceTree = "<group>"; };
 		78F4F8DC1B705EE800E04919 /* unsignedOauthDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unsignedOauthDict.swift; sourceTree = "<group>"; };
+		78F4F8E41B706F8700E04919 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		89D5FAC5282C07F0D1CDC2E2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29050DC3D9BBC902F53AE1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 				78F4F8C11B70551800E04919 /* urlEncode.swift */,
 				78F4F8D41B705DC500E04919 /* processResponse.swift */,
 				78F4F8D61B705E3E00E04919 /* parseQueryParams.swift */,
+				78F4F8E41B706F8700E04919 /* NSData+Extension.swift */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				78F4F8CB1B70581000E04919 /* UrlEncoder.swift in Sources */,
 				78F4F8BE1B70534B00E04919 /* Param.swift in Sources */,
 				78F4F8C21B70551800E04919 /* urlEncode.swift in Sources */,
+				78F4F8E51B706F8700E04919 /* NSData+Extension.swift in Sources */,
 				78F4F8C01B70535200E04919 /* Config.swift in Sources */,
 				78F4F8CD1B7058FA00E04919 /* buildRequest.swift in Sources */,
 				78F4F8DB1B705ED300E04919 /* authString.swift in Sources */,

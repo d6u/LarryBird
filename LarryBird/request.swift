@@ -3,7 +3,7 @@ import Alamofire
 
 public func request
     (config: Config)
-    (endpoint: Endpoint, params: [Param], finish: (error: NSError?, data: [String: AnyObject]?) -> Void)
+    (_ endpoint: Endpoint, params: [Param], finish: (error: NSError?, data: [String: AnyObject]?) -> Void)
 {
     Alamofire.request(buildRequest(config, endpoint, params))
         .validate()

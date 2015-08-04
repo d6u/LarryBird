@@ -1,17 +1,10 @@
 import Foundation
-import CommonCrypto
+import CryptoSwift
 
 func sha1DigestString(baseStr: String, key: String) -> String {
-    let str = baseStr.cStringUsingEncoding(NSUTF8StringEncoding)
-    let strLen = baseStr.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-
-    let digestLen = Int(CC_SHA1_DIGEST_LENGTH)
-    let result = UnsafeMutablePointer<Void>.alloc(digestLen)
-
-    let keyStr = key.cStringUsingEncoding(NSUTF8StringEncoding)!
-    let keyLen = key.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-
-    CCHmac(CCHmacAlgorithm(kCCHmacAlgSHA1), keyStr, keyLen, str!, strLen, result)
-
-    return NSData(bytes: result, length: digestLen).base64EncodedStringWithOptions(nil)
+    let _key = key.dataUsingEncoding(NSUTF8StringEncoding)!
+    let _msg = baseStr.dataUsingEncoding(NSUTF8StringEncoding)!
+    let bytes = Authenticator.HMAC(key: _key.bytes(), variant: HMAC.Variant.sha1).authenticate(_msg.bytes())!
+    let data = NSData.withBytes(bytes)
+    return data.base64EncodedStringWithOptions(nil)
 }
