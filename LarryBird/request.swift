@@ -1,7 +1,8 @@
 import Foundation
 import Alamofire
 
-public typealias FinishClosure = (error: NSError?, data: [String: AnyObject]?) -> Void
+public typealias FinishClosure = (error: NSError?, data: AnyObject?) -> Void
+public typealias UrlFinishClosure = (error: NSError?, url: NSURL?) -> Void
 
 public func request
     (config: Config)
@@ -18,7 +19,10 @@ public func request
         }
 }
 
-public func requestWebAuthUrl(config: Config)(_ callbackUrl: String, finish: (error: NSError?, url: NSURL?) -> Void) {
+public func requestWebAuthUrl
+    (config: Config)
+    (_ callbackUrl: String, _ finish: UrlFinishClosure)
+{
     request(config)(.OauthRequestToken, [.OauthCallback(callbackUrl)]) { error, data in
         let token = data?["oauth_token"] as? String
         let url = NSURL(string: "https://api.twitter.com/oauth/authenticate?oauth_token=\(token)")
@@ -26,7 +30,10 @@ public func requestWebAuthUrl(config: Config)(_ callbackUrl: String, finish: (er
     }
 }
 
-public func requestAccessToken(config: Config)(_ oauthReturnUrl: NSURL, finish: FinishClosure) {
+public func requestAccessToken
+    (config: Config)
+    (_ oauthReturnUrl: NSURL, _ finish: FinishClosure)
+{
     let dict = parseQueryParams(oauthReturnUrl.query!)
 
     if let verifier = dict["oauth_verifier"] where dict["oauth_token"] != nil {
