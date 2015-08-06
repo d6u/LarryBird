@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 public typealias FinishClosure = (error: NSError?, data: AnyObject?) -> Void
-public typealias UrlFinishClosure = (error: NSError?, url: NSURL?) -> Void
+public typealias UrlFinishClosure = (error: NSError?, response: (data: [String: String], url: NSURL)?) -> Void
 
 public func request
     (config: Config)
@@ -24,9 +24,13 @@ public func requestWebAuthUrl
     (_ callbackUrl: String, _ finish: UrlFinishClosure)
 {
     request(config)(.OauthRequestToken, [.OauthCallback(callbackUrl)]) { error, data in
-        let token = data?["oauth_token"] as? String
-        let url = NSURL(string: "https://api.twitter.com/oauth/authenticate?oauth_token=\(token)")
-        finish(error: error, url: url)
+        let dict = data as? [String: String]
+        if let token: String = dict?["oauth_token"] {
+            let url = NSURL(string: "https://api.twitter.com/oauth/authenticate?oauth_token=\(token)")!
+            finish(error: error, response: (data: dict!, url: url))
+        } else {
+            finish(error: error, response: nil)
+        }
     }
 }
 
