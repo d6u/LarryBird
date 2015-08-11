@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'LarryBird'
-  spec.version = '0.0.3'
+  spec.version = '0.0.4'
   spec.summary = 'An alternative Twitter client in Swift.'
   spec.homepage = 'https://github.com/d6u/LarryBird'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
