@@ -32,9 +32,9 @@ public enum Param {
         case .Count(let count):
             return (key: "count", value: String(count))
         case .UserIds(let ids):
-            return (key: "user_id", value: join(",", ids))
+            return (key: "user_id", value: ids.joinWithSeparator(","))
         case .ScreenNames(let names):
-            return (key: "screen_name", value: join(",", names))
+            return (key: "screen_name", value: names.joinWithSeparator(","))
         case .IncludeEntities(let isTrue):
             return (key: "include_entities", value: isTrue ? "true" : "false")
         case .SinceId(let since_id):

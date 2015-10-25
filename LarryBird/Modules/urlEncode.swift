@@ -1,14 +1,7 @@
 import Foundation
 
-private let charactersToBeEscaped = ":/?&=;+!@#$()',*" as CFStringRef
-private let charactersToLeaveUnescaped = "[]." as CFStringRef
+private let charactersToLeaveUnescaped = "[]."
 
 func urlEncode(str: String) -> String {
-    return CFURLCreateStringByAddingPercentEscapes(
-        kCFAllocatorDefault,
-        str as CFString,
-        charactersToLeaveUnescaped,
-        charactersToBeEscaped,
-        CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)
-    ) as String
+    return str.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet(charactersInString: charactersToLeaveUnescaped))!
 }

@@ -7,7 +7,7 @@ func buildRequest(config: Config, endpoint: Endpoint, params: [Param]) -> URLReq
     mutableUrlRequest.HTTPMethod = endpoint.method
 
     let paramDict = paramsToDict(params)
-    let authStr = authString(config, endpoint, paramDict)
+    let authStr = authString(config, endpoint: endpoint, params: paramDict)
     mutableUrlRequest.setValue(authStr, forHTTPHeaderField: "Authorization")
 
     return UrlEncoder.encode(mutableUrlRequest, parameters: paramDict).0

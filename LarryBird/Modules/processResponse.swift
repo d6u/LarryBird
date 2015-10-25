@@ -6,7 +6,7 @@ func processResponse(data: NSData, endpoint: Endpoint) -> AnyObject {
         let json = parseQueryParams(NSString(data: data, encoding: NSUTF8StringEncoding) as! String)
         return json
     case .JSON:
-        let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil)
+        let json: AnyObject? = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
         return json!
     }
 }

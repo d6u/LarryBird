@@ -4,15 +4,12 @@ import Alamofire
 public typealias FinishClosure = (error: NSError?, data: AnyObject?) -> Void
 public typealias UrlFinishClosure = (error: NSError?, response: (data: [String: String], url: NSURL)?) -> Void
 
-public func request
-    (config: Config)
-    (_ endpoint: Endpoint, _ params: [Param], _ finish: FinishClosure)
-{
-    Alamofire.request(buildRequest(config, endpoint, params))
+public func request(config: Config)(_ endpoint: Endpoint, _ params: [Param], _ finish: FinishClosure) {
+    Alamofire.request(buildRequest(config, endpoint: endpoint, params: params))
         .validate()
         .response { request, response, data, error in
             if let data = data {
-                finish(error: nil, data: processResponse(data, endpoint))
+                finish(error: nil, data: processResponse(data, endpoint: endpoint))
             } else {
                 finish(error: error, data: nil)
             }

@@ -10,7 +10,7 @@ let UrlEncoder = Alamofire.ParameterEncoding.Custom {
     for (key, value) in params as! [String: String] {
         arr.append(urlEncode(key) + "=" + urlEncode(value))
     }
-    let paramStr = join("&", arr)
+    let paramStr = arr.joinWithSeparator("&")
 
     switch mutableUrlRequest.HTTPMethod {
     case "GET":
