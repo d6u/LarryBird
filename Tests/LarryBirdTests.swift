@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Alamofire
 @testable import LarryBird
 
 class LarryBirdTests: XCTestCase {
