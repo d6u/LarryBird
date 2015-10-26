@@ -1,6 +1,6 @@
 import Foundation
 
-func authString(config: Config, endpoint: Endpoint, params: [String: String]) -> String {
+func authString(config: Config, _ endpoint: Endpoint, _ params: [String: String]) -> String {
     var oauthDict = unsignedOauthDict(config, params: params, includeToken: endpoint.includeToken)
     let allParams = merge(oauthDict, right: params)
 

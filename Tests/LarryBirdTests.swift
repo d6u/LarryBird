@@ -2,12 +2,12 @@
 //  LarryBirdTests.swift
 //  LarryBirdTests
 //
-//  Created by Daiwei Lu on 8/3/15.
-//  Copyright (c) 2015 Daiwei Lu. All rights reserved.
+//  Created by Daiwei Lu on 10/25/15.
+//  Copyright © 2015 Daiwei Lu. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import LarryBird
 
 class LarryBirdTests: XCTestCase {
     
@@ -23,12 +23,12 @@ class LarryBirdTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
