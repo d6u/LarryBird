@@ -168,11 +168,11 @@
 		784194E91BDDB1470015916A = {
 			isa = PBXGroup;
 			children = (
-				7841957F1BDDC0390015916A /* Alamofire.xcodeproj */,
-				7841956F1BDDBFFD0015916A /* CryptoSwift.xcodeproj */,
 				7841950D1BDDB1680015916A /* Source */,
 				784195121BDDB1710015916A /* Tests */,
 				784194F41BDDB1470015916A /* Products */,
+				7841957F1BDDC0390015916A /* Alamofire.xcodeproj */,
+				7841956F1BDDBFFD0015916A /* CryptoSwift.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
