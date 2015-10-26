@@ -1,0 +1,6 @@
+[submodule "deps/Alamofire"]
+	path = deps/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "deps/CryptoSwift"]
+	path = deps/CryptoSwift
+	url = https://github.com/krzyzanowskim/CryptoSwift.git
