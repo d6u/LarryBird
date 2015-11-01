@@ -1,6 +1,6 @@
 import Foundation
 
-func unsignedOauthDict(config: Config, params: [String: String], includeToken: Bool) -> [String: String] {
+func unsignedOauthDictFromConfig(config: Config, includeToken: Bool) -> [String: String] {
     var dict = [
         "oauth_consumer_key": config.consumerKey,
         "oauth_nonce": NSUUID().UUIDString,

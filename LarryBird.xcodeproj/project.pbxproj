@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783E1ECD1BE6736800BE8222 /* requestWebAuthUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */; };
+		783E1EDA1BE6738300BE8222 /* requestAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1ED91BE6738300BE8222 /* requestAccessToken.swift */; };
+		783E1EDD1BE6747D00BE8222 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1EDB1BE6745A00BE8222 /* RequestTest.swift */; };
+		783E1EDF1BE6770100BE8222 /* DictionaryFromParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1EDE1BE6770100BE8222 /* DictionaryFromParamsTests.swift */; };
+		783E1EE11BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */; };
 		784194FE1BDDB1470015916A /* LarryBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784194F31BDDB1470015916A /* LarryBird.framework */; };
 		784195111BDDB1680015916A /* LarryBird.h in Headers */ = {isa = PBXBuildFile; fileRef = 7841950F1BDDB1680015916A /* LarryBird.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		784195161BDDB1710015916A /* LarryBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195141BDDB1710015916A /* LarryBirdTests.swift */; };
@@ -23,7 +28,7 @@
 		784195311BDDB24E0015916A /* parseQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195251BDDB24E0015916A /* parseQueryParams.swift */; };
 		784195321BDDB24E0015916A /* processResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195261BDDB24E0015916A /* processResponse.swift */; };
 		784195331BDDB24E0015916A /* sha1DigestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195271BDDB24E0015916A /* sha1DigestString.swift */; };
-		784195341BDDB24E0015916A /* unsignedOauthDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195281BDDB24E0015916A /* unsignedOauthDict.swift */; };
+		784195341BDDB24E0015916A /* unsignedOauthDictFromConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195281BDDB24E0015916A /* unsignedOauthDictFromConfig.swift */; };
 		784195351BDDB24E0015916A /* urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195291BDDB24E0015916A /* urlEncode.swift */; };
 		784195361BDDB24E0015916A /* UrlEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841952A1BDDB24E0015916A /* UrlEncoder.swift */; };
 		784195A21BDDC4270015916A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7841958A1BDDC0390015916A /* Alamofire.framework */; };
@@ -118,6 +123,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestWebAuthUrl.swift; sourceTree = "<group>"; };
+		783E1ED91BE6738300BE8222 /* requestAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestAccessToken.swift; sourceTree = "<group>"; };
+		783E1EDB1BE6745A00BE8222 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
+		783E1EDE1BE6770100BE8222 /* DictionaryFromParamsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryFromParamsTests.swift; sourceTree = "<group>"; };
+		783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsignedOauthDictFromConfigTests.swift; sourceTree = "<group>"; };
 		784194F31BDDB1470015916A /* LarryBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LarryBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784194FD1BDDB1470015916A /* LarryBird iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LarryBird iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841950E1BDDB1680015916A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +147,7 @@
 		784195251BDDB24E0015916A /* parseQueryParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseQueryParams.swift; sourceTree = "<group>"; };
 		784195261BDDB24E0015916A /* processResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = processResponse.swift; sourceTree = "<group>"; };
 		784195271BDDB24E0015916A /* sha1DigestString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sha1DigestString.swift; sourceTree = "<group>"; };
-		784195281BDDB24E0015916A /* unsignedOauthDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unsignedOauthDict.swift; sourceTree = "<group>"; };
+		784195281BDDB24E0015916A /* unsignedOauthDictFromConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unsignedOauthDictFromConfig.swift; sourceTree = "<group>"; };
 		784195291BDDB24E0015916A /* urlEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlEncode.swift; sourceTree = "<group>"; };
 		7841952A1BDDB24E0015916A /* UrlEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlEncoder.swift; sourceTree = "<group>"; };
 		7841956F1BDDBFFD0015916A /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = deps/CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
@@ -189,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				7841951A1BDDB2440015916A /* request.swift */,
+				783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */,
+				783E1ED91BE6738300BE8222 /* requestAccessToken.swift */,
 				784195171BDDB2440015916A /* Config.swift */,
 				784195181BDDB2440015916A /* Endpoint.swift */,
 				784195191BDDB2440015916A /* Param.swift */,
@@ -203,6 +215,9 @@
 			children = (
 				784195131BDDB1710015916A /* Info.plist */,
 				784195141BDDB1710015916A /* LarryBirdTests.swift */,
+				783E1EDB1BE6745A00BE8222 /* RequestTest.swift */,
+				783E1EDE1BE6770100BE8222 /* DictionaryFromParamsTests.swift */,
+				783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -210,18 +225,18 @@
 		784195371BDDB7C90015916A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				7841951F1BDDB24E0015916A /* authString.swift */,
-				784195201BDDB24E0015916A /* buildRequest.swift */,
 				784195211BDDB24E0015916A /* dictionaryFromParams.swift */,
-				784195221BDDB24E0015916A /* generateOauthSignature.swift */,
+				784195281BDDB24E0015916A /* unsignedOauthDictFromConfig.swift */,
 				784195231BDDB24E0015916A /* merge.swift */,
+				784195291BDDB24E0015916A /* urlEncode.swift */,
+				784195221BDDB24E0015916A /* generateOauthSignature.swift */,
+				7841951F1BDDB24E0015916A /* authString.swift */,
+				7841952A1BDDB24E0015916A /* UrlEncoder.swift */,
+				784195201BDDB24E0015916A /* buildRequest.swift */,
 				784195241BDDB24E0015916A /* NSData+Extension.swift */,
 				784195251BDDB24E0015916A /* parseQueryParams.swift */,
 				784195261BDDB24E0015916A /* processResponse.swift */,
 				784195271BDDB24E0015916A /* sha1DigestString.swift */,
-				784195281BDDB24E0015916A /* unsignedOauthDict.swift */,
-				784195291BDDB24E0015916A /* urlEncode.swift */,
-				7841952A1BDDB24E0015916A /* UrlEncoder.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -464,9 +479,11 @@
 				784195311BDDB24E0015916A /* parseQueryParams.swift in Sources */,
 				784195321BDDB24E0015916A /* processResponse.swift in Sources */,
 				7841952D1BDDB24E0015916A /* dictionaryFromParams.swift in Sources */,
-				784195341BDDB24E0015916A /* unsignedOauthDict.swift in Sources */,
+				784195341BDDB24E0015916A /* unsignedOauthDictFromConfig.swift in Sources */,
 				784195301BDDB24E0015916A /* NSData+Extension.swift in Sources */,
+				783E1ECD1BE6736800BE8222 /* requestWebAuthUrl.swift in Sources */,
 				7841952C1BDDB24E0015916A /* buildRequest.swift in Sources */,
+				783E1EDA1BE6738300BE8222 /* requestAccessToken.swift in Sources */,
 				7841951D1BDDB2440015916A /* Param.swift in Sources */,
 				784195331BDDB24E0015916A /* sha1DigestString.swift in Sources */,
 				7841951E1BDDB2440015916A /* request.swift in Sources */,
@@ -482,7 +499,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783E1EE11BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift in Sources */,
+				783E1EDF1BE6770100BE8222 /* DictionaryFromParamsTests.swift in Sources */,
 				784195161BDDB1710015916A /* LarryBirdTests.swift in Sources */,
+				783E1EDD1BE6747D00BE8222 /* RequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

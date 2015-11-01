@@ -1,7 +1,7 @@
 import Foundation
 
 func authString(config: Config, _ endpoint: Endpoint, _ params: [String: String]) -> String {
-    var oauthDict = unsignedOauthDict(config, params: params, includeToken: endpoint.includeToken)
+    var oauthDict = unsignedOauthDictFromConfig(config, includeToken: endpoint.includeToken)
     let allParams = merge(oauthDict, right: params)
 
     var signingKey = urlEncode(config.consumerSecret) + "&"
