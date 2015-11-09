@@ -11,11 +11,6 @@ public enum Endpoint: String {
     case UsersLookup = "users/lookup.json"
     case StatusesHomeTimeline = "statuses/home_timeline.json"
 
-    enum Method: String {
-        case GET = "GET"
-        case POST = "POST"
-    }
-
     enum ResponseFormat {
         case QueryParam
         case JSON
@@ -25,9 +20,9 @@ public enum Endpoint: String {
         switch self {
         case .OauthRequestToken: fallthrough
         case .OauthAccessToken:
-            return Method.POST.rawValue
+            return "POST"
         default:
-            return Method.GET.rawValue
+            return "GET"
         }
     }
 

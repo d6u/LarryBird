@@ -1,5 +1,7 @@
 # LarryBird
 
+[![Build Status](https://travis-ci.org/d6u/LarryBird.svg)](https://travis-ci.org/d6u/LarryBird)
+
 LarryBird is an alternative Twitter client written in Swift.
 
 ## Usage
