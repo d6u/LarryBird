@@ -11,10 +11,10 @@ public func request(config: Config, _ endpoint: Endpoint, _ params: [Param], _ f
     Alamofire.request(buildRequest(config, endpoint, params))
         .validate()
         .response { request, response, data, error in
-            if let data = data {
-                finish(error: nil, data: processResponse(data, endpoint: endpoint))
+            if let error = error {
+                finish(error: error, data: processErrorResponse(data!))
             } else {
-                finish(error: error, data: nil)
+                finish(error: nil, data: processResponse(data!, endpoint: endpoint))
             }
         }
 }

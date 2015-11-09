@@ -3,10 +3,12 @@ import Foundation
 func processResponse(data: NSData, endpoint: Endpoint) -> AnyObject {
     switch endpoint.responseFormat {
     case .QueryParam:
-        let json = parseQueryParams(NSString(data: data, encoding: NSUTF8StringEncoding) as! String)
-        return json
+        return parseQueryParams(NSString(data: data, encoding: NSUTF8StringEncoding) as! String)
     case .JSON:
-        let json: AnyObject? = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
-        return json!
+        return try! NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
     }
+}
+
+func processErrorResponse(data: NSData) -> AnyObject {
+    return try! NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
 }
