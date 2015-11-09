@@ -4,20 +4,24 @@ import Nocilla
 
 class RequestTest: XCTestCase {
     
+    override class func setUp() {
+        super.setUp()
+        LSNocilla.sharedInstance().start()
+    }
+    
+    override class func tearDown() {
+        LSNocilla.sharedInstance().stop()
+        super.tearDown()
+    }
+    
     let config = Config(
         consumerKey: "9UWGPKIb9qvJ6QCLeh5FocLOl",
         consumerSecret: "T5wEP5b0aPoUQzMDpAgvElChw9o6OoUInQEKZ7VEbyfgm7gq0E",
         oauthToken: nil,
         oauthSecret: nil)
     
-    override func setUp() {
-        super.setUp()
-        LSNocilla.sharedInstance().start()
-    }
-    
     override func tearDown() {
         LSNocilla.sharedInstance().clearStubs()
-        LSNocilla.sharedInstance().stop()
         super.tearDown()
     }
     
