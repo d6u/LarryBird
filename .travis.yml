@@ -4,3 +4,6 @@ xcode_workspace: LarryBird.xcworkspace
 xcode_sdk: iphonesimulator9.1
 script:
   - xctool -scheme LarryBird -sdk iphonesimulator9.1 test
+branches:
+  only:
+    - master
