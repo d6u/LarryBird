@@ -4,20 +4,27 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0,
     "FEEE689048C6C02176444B2CCAE320EC6C23C634" : 0,
+    "22177D1327869C4919CA54690302F08BAE4542CA" : 0,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D84ED8C8-42EC-472A-9C4A-B1CCBC4B7422",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "LarryBird\/deps\/CryptoSwift\/",
     "FEEE689048C6C02176444B2CCAE320EC6C23C634" : "LarryBird\/",
+    "22177D1327869C4919CA54690302F08BAE4542CA" : "LarryBird\/deps\/Nocilla\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "LarryBird\/deps\/CryptoSwift\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "LarryBird\/deps\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "LarryBird",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LarryBird.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/luisobo\/Nocilla.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22177D1327869C4919CA54690302F08BAE4542CA"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

@@ -4,3 +4,6 @@
 [submodule "deps/CryptoSwift"]
 	path = deps/CryptoSwift
 	url = https://github.com/krzyzanowskim/CryptoSwift.git
+[submodule "deps/Nocilla"]
+	path = deps/Nocilla
+	url = https://github.com/luisobo/Nocilla.git

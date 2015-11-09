@@ -15,7 +15,6 @@
 		783E1EE11BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */; };
 		784194FE1BDDB1470015916A /* LarryBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784194F31BDDB1470015916A /* LarryBird.framework */; };
 		784195111BDDB1680015916A /* LarryBird.h in Headers */ = {isa = PBXBuildFile; fileRef = 7841950F1BDDB1680015916A /* LarryBird.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		784195161BDDB1710015916A /* LarryBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195141BDDB1710015916A /* LarryBirdTests.swift */; };
 		7841951B1BDDB2440015916A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195171BDDB2440015916A /* Config.swift */; };
 		7841951C1BDDB2440015916A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195181BDDB2440015916A /* Endpoint.swift */; };
 		7841951D1BDDB2440015916A /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784195191BDDB2440015916A /* Param.swift */; };
@@ -37,6 +36,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		781B3E431BF0404B0097DDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5475C73D1AC4252400EB9514;
+			remoteInfo = Nocilla;
+		};
+		781B3E451BF0404B0097DDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A085B84915E30749007D33C1;
+			remoteInfo = NocillaTests;
+		};
+		781B3E471BF040770097DDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5475C73C1AC4252300EB9514;
+			remoteInfo = Nocilla;
+		};
 		784194FF1BDDB1470015916A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 784194EA1BDDB1470015916A /* Project object */;
@@ -125,6 +145,7 @@
 
 /* Begin PBXFileReference section */
 		781B3E3B1BF03CA20097DDAC /* MergeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeTests.swift; sourceTree = "<group>"; };
+		781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nocilla.xcodeproj; path = deps/Nocilla/Nocilla.xcodeproj; sourceTree = "<group>"; };
 		783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestWebAuthUrl.swift; sourceTree = "<group>"; };
 		783E1ED91BE6738300BE8222 /* requestAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestAccessToken.swift; sourceTree = "<group>"; };
 		783E1EDB1BE6745A00BE8222 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
@@ -135,7 +156,6 @@
 		7841950E1BDDB1680015916A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7841950F1BDDB1680015916A /* LarryBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LarryBird.h; sourceTree = "<group>"; };
 		784195131BDDB1710015916A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		784195141BDDB1710015916A /* LarryBirdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LarryBirdTests.swift; sourceTree = "<group>"; };
 		784195171BDDB2440015916A /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		784195181BDDB2440015916A /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		784195191BDDB2440015916A /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
@@ -195,6 +215,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		781B3E3F1BF0404A0097DDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				781B3E441BF0404B0097DDAC /* Nocilla.framework */,
+				781B3E461BF0404B0097DDAC /* NocillaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		784194E91BDDB1470015916A = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +232,7 @@
 				784194F41BDDB1470015916A /* Products */,
 				7841957F1BDDC0390015916A /* Alamofire.xcodeproj */,
 				7841956F1BDDBFFD0015916A /* CryptoSwift.xcodeproj */,
+				781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,7 +263,6 @@
 		784195121BDDB1710015916A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				784195141BDDB1710015916A /* LarryBirdTests.swift */,
 				783E1EDB1BE6745A00BE8222 /* RequestTest.swift */,
 				781B3E2E1BF03BD30097DDAC /* Utilities */,
 				781B3E3A1BF03BE10097DDAC /* Supporting Files */,
@@ -337,6 +366,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				781B3E481BF040770097DDAC /* PBXTargetDependency */,
 				784195001BDDB1470015916A /* PBXTargetDependency */,
 			);
 			name = "LarryBird iOS Tests";
@@ -382,6 +412,10 @@
 					ProductGroup = 784195701BDDBFFD0015916A /* Products */;
 					ProjectRef = 7841956F1BDDBFFD0015916A /* CryptoSwift.xcodeproj */;
 				},
+				{
+					ProductGroup = 781B3E3F1BF0404A0097DDAC /* Products */;
+					ProjectRef = 781B3E3E1BF0404A0097DDAC /* Nocilla.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -392,6 +426,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		781B3E441BF0404B0097DDAC /* Nocilla.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nocilla.framework;
+			remoteRef = 781B3E431BF0404B0097DDAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		781B3E461BF0404B0097DDAC /* NocillaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NocillaTests.xctest;
+			remoteRef = 781B3E451BF0404B0097DDAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		784195771BDDBFFD0015916A /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -521,7 +569,6 @@
 				781B3E3D1BF03CBE0097DDAC /* MergeTests.swift in Sources */,
 				783E1EE11BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift in Sources */,
 				783E1EDF1BE6770100BE8222 /* DictionaryFromParamsTests.swift in Sources */,
-				784195161BDDB1710015916A /* LarryBirdTests.swift in Sources */,
 				783E1EDD1BE6747D00BE8222 /* RequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +576,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		781B3E481BF040770097DDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Nocilla;
+			targetProxy = 781B3E471BF040770097DDAC /* PBXContainerItemProxy */;
+		};
 		784195001BDDB1470015916A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 784194F21BDDB1470015916A /* LarryBird iOS */;
