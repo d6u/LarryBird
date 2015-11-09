@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781B3E3D1BF03CBE0097DDAC /* MergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781B3E3B1BF03CA20097DDAC /* MergeTests.swift */; };
 		783E1ECD1BE6736800BE8222 /* requestWebAuthUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */; };
 		783E1EDA1BE6738300BE8222 /* requestAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1ED91BE6738300BE8222 /* requestAccessToken.swift */; };
 		783E1EDD1BE6747D00BE8222 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E1EDB1BE6745A00BE8222 /* RequestTest.swift */; };
@@ -123,6 +124,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		781B3E3B1BF03CA20097DDAC /* MergeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeTests.swift; sourceTree = "<group>"; };
 		783E1ECC1BE6736800BE8222 /* requestWebAuthUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestWebAuthUrl.swift; sourceTree = "<group>"; };
 		783E1ED91BE6738300BE8222 /* requestAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestAccessToken.swift; sourceTree = "<group>"; };
 		783E1EDB1BE6745A00BE8222 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
@@ -175,6 +177,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781B3E2E1BF03BD30097DDAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				783E1EDE1BE6770100BE8222 /* DictionaryFromParamsTests.swift */,
+				783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */,
+				781B3E3B1BF03CA20097DDAC /* MergeTests.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		781B3E3A1BF03BE10097DDAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				784195131BDDB1710015916A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		784194E91BDDB1470015916A = {
 			isa = PBXGroup;
 			children = (
@@ -213,11 +233,10 @@
 		784195121BDDB1710015916A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				784195131BDDB1710015916A /* Info.plist */,
 				784195141BDDB1710015916A /* LarryBirdTests.swift */,
 				783E1EDB1BE6745A00BE8222 /* RequestTest.swift */,
-				783E1EDE1BE6770100BE8222 /* DictionaryFromParamsTests.swift */,
-				783E1EE01BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift */,
+				781B3E2E1BF03BD30097DDAC /* Utilities */,
+				781B3E3A1BF03BE10097DDAC /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -499,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781B3E3D1BF03CBE0097DDAC /* MergeTests.swift in Sources */,
 				783E1EE11BE67A2400BE8222 /* UnsignedOauthDictFromConfigTests.swift in Sources */,
 				783E1EDF1BE6770100BE8222 /* DictionaryFromParamsTests.swift in Sources */,
 				784195161BDDB1710015916A /* LarryBirdTests.swift in Sources */,
